@@ -1,0 +1,18 @@
+{"timestamp":"2025-11-30T22:05:59.881207Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-30T22:05:59.882555Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_to_snowflake_full.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-30T22:06:00.311010Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_to_snowflake_full.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-11-30T22:06:00.344199Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-30T22:06:00.344585Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-30T22:06:00.344862Z","level":"info","event":"Current task name:truncate_weather_full","logger":"task.stdout"}
+{"timestamp":"2025-11-30T22:06:00.345122Z","level":"info","event":"Dag name:weather_to_snowflake_full","logger":"task.stdout"}
+{"timestamp":"2025-11-30T22:06:00.360359Z","level":"info","event":"Snowflake Connector for Python Version: 3.18.0, Python Version: 3.12.12, Platform: Linux-6.12.54-linuxkit-x86_64-with-glibc2.36","logger":"snowflake.connector.connection","filename":"connection.py","lineno":521}
+{"timestamp":"2025-11-30T22:06:00.361874Z","level":"info","event":"Connecting to GLOBAL Snowflake domain","logger":"snowflake.connector.connection","filename":"connection.py","lineno":1464}
+{"timestamp":"2025-11-30T22:06:04.958954Z","level":"info","event":"Running statement: TRUNCATE TABLE weather_full;, parameters: None","logger":"airflow.task.hooks.airflow.providers.snowflake.hooks.snowflake.SnowflakeHook","filename":"snowflake.py","lineno":586}
+{"timestamp":"2025-11-30T22:06:04.959257Z","level":"info","event":"Running statement: TRUNCATE TABLE weather_full;, parameters: None","logger":"airflow.task.hooks.airflow.providers.snowflake.hooks.snowflake.SnowflakeHook","filename":"sql.py","lineno":810}
+{"timestamp":"2025-11-30T22:06:05.081885Z","level":"info","event":"Rows affected: 1","logger":"airflow.task.hooks.airflow.providers.snowflake.hooks.snowflake.SnowflakeHook","filename":"sql.py","lineno":822}
+{"timestamp":"2025-11-30T22:06:05.082011Z","level":"info","event":"Rows affected: 1","logger":"airflow.task.hooks.airflow.providers.snowflake.hooks.snowflake.SnowflakeHook","filename":"snowflake.py","lineno":599}
+{"timestamp":"2025-11-30T22:06:05.082054Z","level":"info","event":"Snowflake query id: 01c0beee-0001-769a-0000-0001c3568129","logger":"airflow.task.hooks.airflow.providers.snowflake.hooks.snowflake.SnowflakeHook","filename":"snowflake.py","lineno":600}
+{"timestamp":"2025-11-30T22:06:05.611665Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-11-30T22:06:05.643558Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-30T22:06:05.644261Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-30T22:06:05.645009Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): truncate_weather_full>","logger":"task.stdout"}

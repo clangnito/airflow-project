@@ -1,0 +1,8 @@
+{"timestamp":"2025-11-30T18:07:33.802241Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-30T18:07:33.804421Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/btc_daily.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-30T18:07:33.864199Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/btc_daily.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-11-30T18:07:34.347004Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-30T18:07:34.348593Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-30T18:07:34.349232Z","level":"info","event":"Current task name:detect_duplicates","logger":"task.stdout"}
+{"timestamp":"2025-11-30T18:07:34.351168Z","level":"info","event":"Dag name:btc_daily_coingecko","logger":"task.stdout"}
+{"timestamp":"2025-11-30T18:07:34.353754Z","level":"info","event":"Skipping task.","reason":"File already exists: /opt/airflow/logs/btc_2025-11-30.json","logger":"task","filename":"task_runner.py","lineno":953}

@@ -1,0 +1,8 @@
+{"timestamp":"2025-11-30T18:42:32.215705Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-30T18:42:32.220040Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_incremental_paris.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-30T18:42:32.292959Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_incremental_paris.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-11-30T18:42:32.537118Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-30T18:42:32.538701Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-30T18:42:32.541433Z","level":"info","event":"Current task name:detect_duplicate","logger":"task.stdout"}
+{"timestamp":"2025-11-30T18:42:32.544236Z","level":"info","event":"Dag name:weather_incremental_paris","logger":"task.stdout"}
+{"timestamp":"2025-11-30T18:42:32.549703Z","level":"info","event":"Skipping task.","reason":"File already exists: /opt/airflow/logs/data/weather/weather_inc_2025-11-30.json","logger":"task","filename":"task_runner.py","lineno":953}
