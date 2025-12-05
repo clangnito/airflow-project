@@ -126,7 +126,7 @@ with DAG(
         
         # Créer une table temporaire pour stocker le JSON brut
         sql_create_temp = """
-        CREATE OR REPLACE TEMPORARY TABLE weather_temp (
+        CREATE OR REPLACE TRANSIENT TABLE weather_temp (
             data VARIANT
         );
         """
